@@ -1,0 +1,10 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: ms-travels
+    url: https://nemesistravelmanagementbackend-production.up.railway.app
+    routes:
+      - name: routes-travels
+        paths: ["/travels"]
+        strip_path: false
