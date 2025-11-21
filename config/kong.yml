@@ -3,7 +3,7 @@ _transform: true
 
 services:
   - name: ms-travels
-    url: https://nemesistravelmanagementbackend-production.up.railway.app
+    url: https://nemesistravelmanagementbackend-development.up.railway.app
     routes:
       - name: routes-travels
         paths: ["/travels"]
