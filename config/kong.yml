@@ -36,3 +36,10 @@ services:
       - name: route-authentication
         paths: ["/api/auth"]
         strip_path: false
+        
+  - name: ms-administrator
+    url: https://ateneaadministrationbackend-development.up.railway.app/
+    routes:
+      - name: route-administrator
+        paths: ["/admin"]
+        strip_path: false
