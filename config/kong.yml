@@ -34,12 +34,19 @@ services:
     url: https://kratosauthenticationbackend-develop.up.railway.app
     routes:
       - name: route-authentication
-        paths: ["/api/auth"]
+        paths: ["/auth"]
         strip_path: false
         
   - name: ms-administrator
-    url: https://ateneaadministrationbackend-development.up.railway.app/
+    url: https://ateneaadministrationbackend-development.up.railway.app
     routes:
       - name: route-administrator
         paths: ["/admin"]
+        strip_path: false
+
+  - name: ms-profile
+    url: https://troyareputationbackend-staging.up.railway.app
+    routes:
+      - name: route-profile
+        paths: ["/profiles"]
         strip_path: false
