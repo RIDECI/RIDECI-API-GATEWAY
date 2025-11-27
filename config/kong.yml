@@ -50,3 +50,10 @@ services:
       - name: route-profile
         paths: ["/profiles"]
         strip_path: false
+        
+  - name: ms-notifications
+    url: https://ateneanotificationsbackend-development.up.railway.app
+    routes:
+      - name: route-notification
+        paths: ["/notifications"]
+        strip_path: false
