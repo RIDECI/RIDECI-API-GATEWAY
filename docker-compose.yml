@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  kong:
+    image: kong:3.4
+    container_name: kong-dev
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /config/kong.yml
+      KONG_DECLARATIVE_CONFIG_STRING: "true"
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      URL_TRAVELS: ${URL_TRAVELS}
+      URL_COMMUNICATION: ${URL_COMMUNICATION}
+      URL_USERS: ${URL_USERS}
+      URL_AUTH: ${URL_AUTH}
+      URL_ADMIN: ${URL_ADMIN}
+      URL_PROFILE: ${URL_PROFILE}
+      URL_NOTIFICATIONS: ${URL_NOTIFICATIONS}
+    volumes:
+      - ./config:/config
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+    env_file: .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,63 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: ms-travels
+    url: https://nemesistravelmanagementbackend-development.up.railway.app
+    routes:
+      - name: routes-travels
+        paths: ["/travels"]
+        strip_path: false
+       
+  #- name: ms-geolocation
+    #url: https://nemesisroutesandtrackingbackend-development.up.railway.app
+    #routes:
+      #- name: routes-geolocation
+        #paths: [""]
+        #strip_path: false
+
+  - name: ms-communication
+    url: https://hadescommunicationsecuritybackend-development.up.railway.app
+    routes:
+      - name: route-communication
+        paths: ["/conversations"]
+        strip_path: false
+
+  - name: route-communication-ws
+    paths: ["/ws/chat"]
+    strip_path: false
+
+  - name: ms-users
+    url: https://kratosuser-managementbackend-develop.up.railway.app
+    routes:
+      - name: route-users
+        paths: ["/users"]
+        strip_path: false
+
+  - name: ms-authentication
+    url: https://kratosauthenticationbackend-develop.up.railway.app
+    routes:
+      - name: route-authentication
+        paths: ["/auth"]
+        strip_path: false
+        
+  - name: ms-administrator
+    url: https://ateneaadministrationbackend-development.up.railway.app
+    routes:
+      - name: route-administrator
+        paths: ["/admin"]
+        strip_path: false
+
+  - name: ms-profile
+    url: https://troyareputationbackend-staging.up.railway.app
+    routes:
+      - name: route-profile
+        paths: ["/profiles"]
+        strip_path: false
+        
+  - name: ms-notifications
+    url: https://ateneanotificationsbackend-development.up.railway.app
+    routes:
+      - name: route-notification
+        paths: ["/notifications"]
+        strip_path: false
