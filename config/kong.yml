@@ -22,6 +22,9 @@ services:
       - name: route-communication
         paths: ["/conversations"]
         strip_path: false
+      - name: route-communication-ws
+        paths: ["/ws/chat"]
+        strip_path: false
 
   - name: ms-users
     url: https://kratosuser-managementbackend-develop.up.railway.app
