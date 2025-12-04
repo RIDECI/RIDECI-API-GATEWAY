@@ -38,7 +38,7 @@ services:
         strip_path: false
         
   - name: ms-administrator
-    url: https://ateneaadministrationbackend-development.up.railway.app
+    url: https://ateneaadministrationbackend-production-cb10.up.railway.app
     routes:
       - name: route-administrator
         paths: ["/admin"]
@@ -52,7 +52,7 @@ services:
         strip_path: false
         
   - name: ms-notifications
-    url: https://ateneanotificationsbackend-development.up.railway.app
+    url: https://ateneanotificationsbackend-production.up.railway.app/
     routes:
       - name: route-notification
         paths: ["/notifications"]
