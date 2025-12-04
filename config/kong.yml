@@ -17,7 +17,7 @@ services:
         strip_path: false
 
   - name: ms-communication
-    url: https://hadescommunicationsecuritybackend-development.up.railway.app
+    url: https://web-production-3ac7a.up.railway.app
     routes:
       - name: route-communication
         paths: ["/conversations"]
