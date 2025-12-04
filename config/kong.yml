@@ -52,7 +52,7 @@ services:
         strip_path: false
         
   - name: ms-notifications
-    url: https://ateneanotificationsbackend-production.up.railway.app/
+    url: https://ateneanotificationsbackend-production.up.railway.app
     routes:
       - name: route-notification
         paths: ["/notifications"]
