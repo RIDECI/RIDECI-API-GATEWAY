@@ -3,18 +3,18 @@ _transform: true
 
 services:
   - name: ms-travels
-    url: https://nemesistravelmanagementbackend-development.up.railway.app
+    url: https://nemesistravelmanagementbackend-production.up.railway.app
     routes:
       - name: routes-travels
         paths: ["/travels"]
         strip_path: false
        
-  #- name: ms-geolocation
-    #url: https://nemesisroutesandtrackingbackend-development.up.railway.app
-    #routes:
-      #- name: routes-geolocation
-        #paths: [""]
-        #strip_path: false
+  - name: ms-geolocation
+    url: https://nemesisroutesandtrackingbackend-production.up.railway.app
+    routes:
+      - name: routes-geolocation
+        paths: [""]
+        strip_path: false
 
   - name: ms-communication
     url: https://hadescommunicationsecuritybackend-development.up.railway.app
