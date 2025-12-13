@@ -11,19 +11,15 @@ services:
 
 
   - name: ms-communication
-    url: https://web-production-3ac7a.up.railway.app
+    url: https://web-production-d849d5.up.railway.app
     routes:
       - name: route-communication
         paths: ["/conversations"]
         strip_path: false
-  
-  - name: ms-communicariont-report
-    url: https://web-production-3ac7a.up.railway.app
-    routes:
-      - name: route-communication-report
+      - name: route-communication-reports
         paths: ["/reports"]
         strip_path: false
-
+  
   - name: ms-users
     url: https://kratosuser-managementbackend-develop.up.railway.app
     routes:
