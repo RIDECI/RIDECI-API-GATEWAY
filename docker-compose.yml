@@ -16,10 +16,21 @@ services:
       URL_ADMIN: ${URL_ADMIN}
       URL_PROFILE: ${URL_PROFILE}
       URL_NOTIFICATIONS: ${URL_NOTIFICATIONS}
+      URL_GEOLOCATIONS: ${URL_GEOLOCATIONS}
+
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      
+      KONG_HEADERS: off
+      KONG_PROXY_LISTEN: "0.0.0.0:8000 reuseport, 0.0.0.0:8443 ssl reuseport"
+
+
     volumes:
       - ./config:/config
     ports:
       - "8000:8000"
+      - "8002:8002"   
+      - "8443:8443"   
+      - "8001:8001"
       - "8001:8001"
     env_file: .env
     extra_hosts:
