@@ -9,6 +9,13 @@ services:
         paths: ["/travels"]
         strip_path: false
 
+  - name: ms-geolocation
+    url: https://nemesisroutesandtrackingbackend-production.up.railway.app
+    routes:
+      - name: routes-geolocation
+        paths: ["/geolocations"]
+        strip_path: false
+
 
   - name: ms-communication
     url: https://web-production-d849d5.up.railway.app
@@ -28,7 +35,7 @@ services:
         strip_path: false
 
   - name: ms-authentication
-    url: https://kratosauthenticationbackend-develop.up.railway.app
+    url: https://kratosauthenticationbackend-production.up.railway.app
     routes:
       - name: route-authentication
         paths: ["/auth"]
